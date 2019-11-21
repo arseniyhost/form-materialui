@@ -32,4 +32,3 @@ const ModalPop = ({ classes, modelActive, offModelActive, handleSubmit }) => {
 }
 
 export default ModalPop;
-
