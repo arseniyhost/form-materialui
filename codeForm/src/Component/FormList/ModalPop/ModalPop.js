@@ -11,6 +11,7 @@ import ButtonIconBox from '../../../common/ButtonIconBox';
 
 
 const ModalPop = ({ classes, modelActive, offModelActive, handleSubmit }) => {
+
     return (
         <Modal className={classes.modal} open={modelActive}>
             <Fade in={modelActive}>
@@ -19,7 +20,9 @@ const ModalPop = ({ classes, modelActive, offModelActive, handleSubmit }) => {
                         Структура номера
                         <ButtonIconBox id={"btnClose"} color={"inherit"} onClick={offModelActive} />
                     </Box>
-                    <FieldArray name="list" component={ListElementArrays} />
+                    <Grid xs={12} container>
+                        <FieldArray name="list" component={ListElementArrays} />
+                    </Grid>
                     <Grid container direction="row">
                         <ButtonBox xs={3} variant={"contained"} color={"primary"} type={"submit"} id={style.btnSave} text={"Сохранить"} />
                         <ButtonBox xs={3} onClick={offModelActive} text={"Отмена"} />

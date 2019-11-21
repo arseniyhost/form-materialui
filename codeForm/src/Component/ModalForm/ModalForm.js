@@ -3,12 +3,14 @@ import { reduxForm } from 'redux-form';
 import Container from '@material-ui/core/Container';
 import { useStyles } from '../../hooks/hookStyles';
 import { FormList } from '../FormList/FormList';
+import { getFormData } from './../../redux/formDataReducer';
 import { connect } from 'react-redux';
 
 
 const ModalForm = (props) => {
     const classes = useStyles();
     const [modelActive, setModelActive] = useState(false);
+
 
     const onModelActive = () => {
         setModelActive(true);
@@ -20,17 +22,17 @@ const ModalForm = (props) => {
 
     const onSubmit = (formData) => {
         if (!formData || !formData.list) {
-            alert("Error");
+            return
         }
 
-        else if (formData.list) {
+        else {
             if (formData.list.length === 0 || !formData.list) {
-                console.log("Error123");
+                return
             }
             else {
-                console.log(formData);
+                props.getFormData(formData.list);
                 setModelActive(false);
-                
+                console.log(formData);
             }
         }
 
@@ -47,8 +49,11 @@ const ListFormRedux = reduxForm({
     form: "test"
 })(FormList);
 
-const mapStateToProps = (state) => ({
-    form: state.form
-})
+let mapStateToProps = state => {
+    return {
+        formInfo: state.form
+    }
+}
 
-export default connect(mapStateToProps, null)(ModalForm);
+
+export default connect(mapStateToProps, { getFormData })(ModalForm);

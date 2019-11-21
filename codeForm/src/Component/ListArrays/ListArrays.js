@@ -17,18 +17,18 @@ const ListElementArrays = ({ fields }) => {
         <ul>
             {fields.map((ing, id) => {
                 return <Container key={ing}>
-                    <Grid spacing={1} container direction="row" >
-                        <Grid item xs={3}>
+                    <Grid justify={"space-between"} spacing={1} container direction="row" >
+                        <Grid item xs={4}>
                             <Field validate={[require]} component={renderSelect} name={ing + "colors"} />
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={4}>
                             <Field validate={[require, max]}
                                 name={ing + "number"}
                                 type="number"
                                 component={renderInput}
                             />
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={4}>
                             <ButtonIconBox color={"secondary"} size={"small"} onClick={() => fields.remove(id)} />
                         </Grid>
                     </Grid>
