@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/form-materialui/test/main.css",
+    "main.js": "/form-materialui/test/main.6d1453bb712061ad4cf1.bundle.js",
+    "main.css.map": "/form-materialui/test/main.css.map",
+    "main.js.map": "/form-materialui/test/main.6d1453bb712061ad4cf1.bundle.js.map",
+    "runtime~main.js": "/form-materialui/test/runtime~main.6d1453bb712061ad4cf1.bundle.js",
+    "runtime~main.js.map": "/form-materialui/test/runtime~main.6d1453bb712061ad4cf1.bundle.js.map",
+    "vendors~main.js": "/form-materialui/test/vendors~main.6d1453bb712061ad4cf1.bundle.js",
+    "vendors~main.js.map": "/form-materialui/test/vendors~main.6d1453bb712061ad4cf1.bundle.js.map",
+    "iframe.html": "/form-materialui/test/iframe.html",
+    "precache-manifest.aefe3268eaf4ee68bbc0bf127d570592.js": "/form-materialui/test/precache-manifest.aefe3268eaf4ee68bbc0bf127d570592.js",
+    "service-worker.js": "/form-materialui/test/service-worker.js"
+  },
+  "entrypoints": [
+    "runtime~main.6d1453bb712061ad4cf1.bundle.js",
+    "vendors~main.6d1453bb712061ad4cf1.bundle.js",
+    "main.css",
+    "main.6d1453bb712061ad4cf1.bundle.js"
+  ]
+}
