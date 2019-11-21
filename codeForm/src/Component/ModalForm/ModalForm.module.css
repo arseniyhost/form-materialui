@@ -1,0 +1,45 @@
+.modal {
+    color: #000;
+    background: #fff;
+    border: 2px solid grey;
+    width: 400px;
+    padding: 20px;
+}
+
+.modal ul li {
+    list-style-type: none;
+}
+
+.btnIcon {
+    border: none;
+    cursor: pointer;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.head svg {
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+#btnPush {
+    margin-top: 20px;
+}
+
+#btnSave {
+    margin-right: 20px;
+}
+
+#btnClose:hover svg path {
+    color: #f44336;
+}
