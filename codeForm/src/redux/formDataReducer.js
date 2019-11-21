@@ -1,4 +1,4 @@
-const GET_FORM_DATA = 'state/formData/GET_FORM_DATA';
+const GET_FORM_DATA = 'test-task/formData/GET_FORM_DATA';
 
 let initState = {
     formData: null
