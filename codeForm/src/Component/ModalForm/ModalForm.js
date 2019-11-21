@@ -11,7 +11,6 @@ const ModalForm = (props) => {
     const classes = useStyles();
     const [modelActive, setModelActive] = useState(false);
 
-
     const onModelActive = () => {
         setModelActive(true);
     }
@@ -40,7 +39,11 @@ const ModalForm = (props) => {
 
     return (
         <Container>
-            <ListFormRedux classes={classes} onSubmit={onSubmit} onModelActive={onModelActive} offModelActive={offModelActive} modelActive={modelActive} />
+            <ListFormRedux classes={classes}
+                onSubmit={onSubmit}
+                onModelActive={onModelActive}
+                offModelActive={offModelActive}
+                modelActive={modelActive} />
         </Container>
     )
 }
@@ -54,6 +57,5 @@ let mapStateToProps = state => {
         formInfo: state.form
     }
 }
-
 
 export default connect(mapStateToProps, { getFormData })(ModalForm);

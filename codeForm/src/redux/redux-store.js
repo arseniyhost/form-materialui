@@ -7,7 +7,6 @@ let reducers = combineReducers({
     formData: formDataReducer 
 });
 
-
 let store = createStore(reducers);
 
 window.store = store;

@@ -3,7 +3,6 @@ import Input from '@material-ui/core/Input';
 import { FormControl, Select, MenuItem } from '@material-ui/core';
 import style from './utils.module.css';
 
-
 export const renderInput = ({ label, input, meta: { touched, error } }) => {
     let hasError = touched && error;
 
@@ -17,7 +16,6 @@ export const renderInput = ({ label, input, meta: { touched, error } }) => {
         {touched && error && <span className={style.error}>{error}</span>}
     </div>
 }
-
 
 export const renderSelect = ({ input, meta: { touched, error } }) => {
     let hasError = touched && error;

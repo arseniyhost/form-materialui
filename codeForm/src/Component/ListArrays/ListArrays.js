@@ -11,8 +11,6 @@ import Container from '@material-ui/core/Container';
 let max = maxLengthSymbols(4);
 
 const ListElementArrays = ({ fields }) => {
-
-
     return (
         <ul>
             {fields.map((ing, id) => {

@@ -9,9 +9,7 @@ import ButtonBox from '../../../common/ButtonBox';
 import { Grid } from '@material-ui/core';
 import ButtonIconBox from '../../../common/ButtonIconBox';
 
-
 const ModalPop = ({ classes, modelActive, offModelActive, handleSubmit }) => {
-
     return (
         <Modal className={classes.modal} open={modelActive}>
             <Fade in={modelActive}>
@@ -34,3 +32,4 @@ const ModalPop = ({ classes, modelActive, offModelActive, handleSubmit }) => {
 }
 
 export default ModalPop;
+
