@@ -2,7 +2,7 @@
 
 ### `react app github`
 
-link here: [https://arseniyhost.github.io/form-materialui/test/]
+link here: [https://arseniyhost.github.io/form-materialui/test/index.html]
 
 ### `react app storybook`
 
